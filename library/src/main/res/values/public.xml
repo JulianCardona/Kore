@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Dimens-->
+    <public name="spacing_size_extra_small" type="dimen"></public>
+    <public name="spacing_size_small" type="dimen"></public>
+    <public name="spacing_size_medium" type="dimen"></public>
+    <public name="spacing_size_large" type="dimen"></public>
+    <public name="spacing_size_extra_large" type="dimen"></public>
+
+    <!--Styles-->
+    <public name="ButtonsStyle" type="style"></public>
+    <public name="EditTextStyle" type="style"></public>
+    <public name="CheckboxStyle" type="style"></public>
+    <public name="TextStyleSmall" type="style"></public>
+    <public name="TextStyleMedium" type="style"></public>
+    <public name="TextStyleLarge" type="style"></public>
+
+
+</resources>

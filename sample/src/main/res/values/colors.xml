@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Palette-->
+    <color name="primary">@color/brand_main_color</color>
+    <color name="primary_dark">@color/brand_main_color_dark</color>
+    <color name="accent">@color/brand_main_color</color>
+    <color name="accent_dark">@color/brand_main_color_dark</color>
+
+    <!--Brand-->
+    <color name="window_background">#FFF1F1F1</color>
+    <color name="brand_main_color">#009688</color>
+    <color name="brand_main_color_dark">#00786c</color>
+    <color name="brand_gray">#888888</color>
+    <color name="brand_gray_dark">#666666</color>
+
+</resources>
