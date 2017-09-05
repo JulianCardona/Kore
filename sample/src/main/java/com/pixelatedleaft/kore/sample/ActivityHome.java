@@ -4,19 +4,28 @@ import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
 import com.pixelatedleaft.kore.sample.databinding.ActivityHomeBinding;
+import com.pixelatedleaft.library.KoreActivity;
 
-public class ActivityHome extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
+public class ActivityHome extends KoreActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
 
     private ActivityHomeBinding binding;
+
+    @Override
+    protected void initVars() {
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this,R.layout.activity_home);
+    }
+
+    @Override
+    protected void initViews() {
         setUpNavBar();
     }
 
@@ -28,10 +37,13 @@ public class ActivityHome extends AppCompatActivity implements BottomNavigationV
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.navigation_home:
+
                 return true;
             case R.id.navigation_dashboard:
+
                 return true;
             case R.id.navigation_notifications:
+
                 return true;
         }
         return false;
