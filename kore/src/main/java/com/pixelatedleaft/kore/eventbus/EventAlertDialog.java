@@ -1,4 +1,4 @@
-package com.pixelatedleaft.library.eventbus;
+package com.pixelatedleaft.kore.eventbus;
 
 import android.content.DialogInterface;
 

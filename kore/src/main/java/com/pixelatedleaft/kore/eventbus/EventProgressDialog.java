@@ -1,4 +1,4 @@
-package com.pixelatedleaft.library.eventbus;
+package com.pixelatedleaft.kore.eventbus;
 
 /**
  * @author Julian Cardona on 9/5/17.

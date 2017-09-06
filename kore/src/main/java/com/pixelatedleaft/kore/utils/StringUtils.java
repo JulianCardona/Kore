@@ -1,4 +1,4 @@
-package com.pixelatedleaft.library.utils;
+package com.pixelatedleaft.kore.utils;
 
 /**
  * @author Julian Cardona on 9/5/17.

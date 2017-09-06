@@ -1,4 +1,4 @@
-package com.pixelatedleaft.library.utils;
+package com.pixelatedleaft.kore.utils;
 
 import java.io.File;
 import java.net.URLConnection;

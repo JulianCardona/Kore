@@ -1,4 +1,4 @@
-package com.pixelatedleaft.library.utils;
+package com.pixelatedleaft.kore.utils;
 
 import org.joda.time.DateTime;
 import org.joda.time.format.DateTimeFormat;

@@ -1,4 +1,4 @@
-package com.pixelatedleaft.library.navigation;
+package com.pixelatedleaft.kore.navigation;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

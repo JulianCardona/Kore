@@ -1,4 +1,4 @@
-package com.pixelatedleaft.library;
+package com.pixelatedleaft.kore;
 
 import android.annotation.SuppressLint;
 import android.app.Application;

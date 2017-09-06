@@ -7,7 +7,7 @@ import android.support.design.widget.BottomNavigationView;
 import android.view.MenuItem;
 
 import com.pixelatedleaft.kore.sample.databinding.ActivityHomeBinding;
-import com.pixelatedleaft.library.KoreActivity;
+import com.pixelatedleaft.kore.KoreActivity;
 
 public class ActivityHome extends KoreActivity implements BottomNavigationView.OnNavigationItemSelectedListener{
 

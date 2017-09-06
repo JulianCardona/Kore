@@ -1,4 +1,4 @@
-package com.pixelatedleaft.library;
+package com.pixelatedleaft.kore;
 
 import android.arch.lifecycle.LifecycleRegistry;
 import android.arch.lifecycle.LifecycleRegistryOwner;
@@ -9,9 +9,9 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.View;
 
-import com.pixelatedleaft.library.eventbus.GhostEvent;
-import com.pixelatedleaft.library.lifecycle.LifecycleObserverDisposables;
-import com.pixelatedleaft.library.lifecycle.LifecycleObserverEventBus;
+import com.pixelatedleaft.kore.eventbus.GhostEvent;
+import com.pixelatedleaft.kore.lifecycle.LifecycleObserverDisposables;
+import com.pixelatedleaft.kore.lifecycle.LifecycleObserverEventBus;
 
 import org.greenrobot.eventbus.Subscribe;
 

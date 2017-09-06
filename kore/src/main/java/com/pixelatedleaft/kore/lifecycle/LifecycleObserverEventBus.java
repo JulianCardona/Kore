@@ -1,4 +1,4 @@
-package com.pixelatedleaft.library.lifecycle;
+package com.pixelatedleaft.kore.lifecycle;
 
 import android.arch.lifecycle.Lifecycle;
 import android.arch.lifecycle.LifecycleObserver;

@@ -1,4 +1,4 @@
-package com.pixelatedleaft.library;
+package com.pixelatedleaft.kore;
 
 import android.app.ProgressDialog;
 import android.arch.lifecycle.LifecycleRegistry;
@@ -13,13 +13,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
-import com.pixelatedleaft.library.eventbus.EventAlertDialog;
-import com.pixelatedleaft.library.eventbus.EventProgressDialog;
-import com.pixelatedleaft.library.eventbus.EventSnackbar;
-import com.pixelatedleaft.library.lifecycle.LifecycleObserverDisposables;
-import com.pixelatedleaft.library.lifecycle.LifecycleObserverEventBus;
-import com.pixelatedleaft.library.navigation.KoreActivityNavigationController;
-import com.pixelatedleaft.library.utils.StringUtils;
+import com.pixelatedleaft.kore.eventbus.EventAlertDialog;
+import com.pixelatedleaft.kore.eventbus.EventProgressDialog;
+import com.pixelatedleaft.kore.eventbus.EventSnackbar;
+import com.pixelatedleaft.kore.lifecycle.LifecycleObserverDisposables;
+import com.pixelatedleaft.kore.lifecycle.LifecycleObserverEventBus;
+import com.pixelatedleaft.kore.navigation.KoreActivityNavigationController;
+import com.pixelatedleaft.kore.utils.StringUtils;
 
 import org.greenrobot.eventbus.Subscribe;
 
