@@ -1,15 +1,15 @@
 ext {
 
     bintrayRepo = 'Kore'
-    bintrayPackage = 'kore'
+    bintrayPackage = 'recyclerview'
 
-    projectVersion = '0.0.2'
-    projectName = 'Kore'
+    projectVersion = '0.0.1'
+    projectName = 'recyclerview'
     projectDesc = 'New Version'
     projectUrl = 'https://github.com/JulianCardona/Kore.git'
 
     mavenGroup = 'com.pixelatedleaft.kore'
-    mavenArtifactId = 'kore'
+    mavenArtifactId = 'recyclerview'
 
     bintrayUser = 'ekkoz'
 }

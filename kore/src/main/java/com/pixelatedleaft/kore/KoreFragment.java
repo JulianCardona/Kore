@@ -46,6 +46,11 @@ public abstract class KoreFragment extends Fragment implements LifecycleRegistry
 
     abstract protected void initVars();
 
+    @Override
+    public LifecycleRegistry getLifecycle() {
+        return lifecycleRegistry;
+    }
+
     @CallSuper
     @Override
     public void onAttach(Context activity) {
