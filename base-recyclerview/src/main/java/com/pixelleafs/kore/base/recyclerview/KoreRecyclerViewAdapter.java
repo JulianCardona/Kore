@@ -1,4 +1,4 @@
-package com.pixelleafs.kore.recyclerview;
+package com.pixelleafs.kore.base.recyclerview;
 
 import android.content.Context;
 import android.databinding.DataBindingUtil;

@@ -1,4 +1,4 @@
-package com.pixelleafs.kore.recyclerview;
+package com.pixelleafs.kore.base.recyclerview;
 
 import android.os.Bundle;
 import android.os.Handler;

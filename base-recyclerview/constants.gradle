@@ -5,13 +5,13 @@ properties.load(project.rootProject.file('local.properties').newDataInputStream(
 ext {
 
     bintrayRepo = 'maven'
-    bintrayName = 'kore'
+    bintrayName = 'base-recyclerview'
     bintrayUser = properties.getProperty("bintray.user")
     bintrayApiKey = properties.getProperty("bintray.apikey")
 
-    publishedGroupId = 'com.pixelleafs.kore'
-    libraryName = 'Kore'
-    artifact = 'kore'
+    publishedGroupId = 'com.pixelleafs.kore.base.recyclerview'
+    libraryName = 'Kore Base Recycler'
+    artifact = 'base-recyclerview'
 
     libraryDescription = 'Android library that wraps basic components, functions and behaviours normally used when creating Android apps.'
 
