@@ -4,6 +4,6 @@ Android library that wraps basic components, functions and behaviours normally u
 Include the library
 
  ```
- compile 'com.pixelatedleaft.kore:kore:0.0.3'
- compile 'com.pixelatedleaft.kore:recyclerview:0.0.2'
+ compile 'com.pixelleafs.kore:kore:0.0.1'
+ compile 'com.pixelleafs.kore:recyclerview:0.0.1'
  ```

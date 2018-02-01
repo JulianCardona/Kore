@@ -3,13 +3,12 @@ ext {
     bintrayRepo = 'Kore'
     bintrayPackage = 'kore'
 
-    projectVersion = '0.0.3'
-    projectName = 'Kore'
-    projectDesc = 'New Version'
-    projectUrl = 'https://github.com/JulianCardona/Kore.git'
+    moduleName = "kore"
+    moduleVersion = '0.0.1'
+    moduleDesc = 'New Version'
+    moduleUrl = 'https://github.com/JulianCardona/Kore.git'
 
-    mavenGroup = 'com.pixelatedleaft.kore'
-    mavenArtifactId = 'kore'
+    mavenGroup = 'com.pixelleafs.kore'
+    mavenArtifactId = moduleName
 
-    bintrayUser = 'ekkoz'
 }
