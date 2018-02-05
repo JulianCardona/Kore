@@ -7,6 +7,10 @@ android {
     compileSdkVersion 27
     buildToolsVersion "26.0.2"
 
+    dataBinding {
+        enabled = true
+    }
+
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 27
@@ -26,17 +30,11 @@ android {
 
 dependencies {
 
-    annotationProcessor "android.arch.lifecycle:compiler:$deps_versions.arch_components"
-
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
+    implementation project(':kore')
     implementation "com.android.support:appcompat-v7:$deps_versions.support"
-    implementation "com.android.support:design:$deps_versions.support"
-    implementation "android.arch.lifecycle:runtime:$deps_versions.arch_components"
-    implementation "android.arch.lifecycle:extensions:$deps_versions.arch_components"
+    implementation "com.android.support:recyclerview-v7:$deps_versions.support"
     implementation "io.reactivex.rxjava2:rxandroid:$deps_versions.rx_android"
-    implementation "org.greenrobot:eventbus:$deps_versions.eventbus"
-    implementation "joda-time:joda-time:$deps_versions.joda_time"
     implementation "com.jakewharton.timber:timber:$deps_versions.timber"
 
 }

@@ -1,1 +1,1 @@
-include ':kore',':recyclerview',':sample'
+include ':kore', ':kore-recyclerview',':sample'
