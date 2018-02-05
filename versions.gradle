@@ -1,0 +1,32 @@
+
+/**
+ * Project dependencies versions
+ **/
+ext.deps_versions = [:]
+
+def versions = [:]
+versions.plugin_kotlin = "1.2.20"
+versions.plugin_gradle = "3.0.1"
+versions.plugin_google_services = "3.1.0"
+versions.plugin_android_maven = "2.0"
+versions.plugin_bintray = "1.8.0"
+versions.kotlin = "1.2.20"
+versions.support = "27.0.2"
+versions.junit = "4.12"
+versions.atsl_runner = "1.0.1"
+versions.espresso = "3.0.1"
+versions.arch_components = "1.1.0"
+versions.constraint_layout = "1.0.2"
+versions.rx_android = "2.0.1"
+versions.rx_binding = "2.1.0"
+versions.eventbus = "3.1.1"
+versions.timber = "4.6.0"
+versions.joda_time = "2.9.9"
+versions.gson = "2.8.2"
+ext.deps_versions = versions
+
+def addRepos(RepositoryHandler handler) {
+    handler.google()
+    handler.jcenter()
+}
+ext.addRepos = this.&addRepos
