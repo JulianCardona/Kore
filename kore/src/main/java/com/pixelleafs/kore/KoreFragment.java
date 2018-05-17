@@ -1,7 +1,5 @@
 package com.pixelleafs.kore;
 
-import android.arch.lifecycle.LifecycleRegistry;
-import android.arch.lifecycle.LifecycleRegistryOwner;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.CallSuper;
@@ -9,7 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.View;
 
-import com.pixelleafs.kore.eventbus.GhostEvent;
+import com.pixelleafs.kore.eventbus.EventGhost;
 import com.pixelleafs.kore.lifecycle.LifecycleObserverDisposables;
 import com.pixelleafs.kore.lifecycle.LifecycleObserverEventBus;
 
@@ -22,9 +20,8 @@ import io.reactivex.disposables.Disposable;
  * @author Julian Cardona on 9/5/17.
  */
 
-public abstract class KoreFragment extends Fragment implements LifecycleRegistryOwner {
+public abstract class KoreFragment extends Fragment{
 
-    private final LifecycleRegistry lifecycleRegistry = new LifecycleRegistry(this);
     private final LifecycleObserverDisposables lifecycleObserverDisposables = new LifecycleObserverDisposables();
     private final LifecycleObserverEventBus lifecycleObserverEventBus = new LifecycleObserverEventBus(this);
 
@@ -45,11 +42,6 @@ public abstract class KoreFragment extends Fragment implements LifecycleRegistry
     }
 
     abstract protected void initVars();
-
-    @Override
-    public LifecycleRegistry getLifecycle() {
-        return lifecycleRegistry;
-    }
 
     @CallSuper
     @Override
@@ -74,6 +66,6 @@ public abstract class KoreFragment extends Fragment implements LifecycleRegistry
     abstract protected void initViews();
 
     @Subscribe
-    public void onEventGhost(GhostEvent event) {}
+    public void onEventGhost(EventGhost event) {}
 
 }
