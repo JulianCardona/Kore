@@ -18,7 +18,7 @@ ext {
     siteUrl = 'https://github.com/JulianCardona/Kore'
     gitUrl = 'https://github.com/JulianCardona/Kore.git'
 
-    libraryVersion = '0.0.1'
+    libraryVersion = '0.0.2'
 
     developerId = properties.getProperty("bintray.developerId")
     developerName = properties.getProperty("bintray.developerName")

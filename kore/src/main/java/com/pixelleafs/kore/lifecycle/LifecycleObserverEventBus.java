@@ -18,14 +18,23 @@ public class LifecycleObserverEventBus implements LifecycleObserver {
         this.subscriber = subscriber;
     }
 
+    @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)
+    public void onCreate(){
+        EventBus.getDefault().register(subscriber);
+    }
+
     @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
     public void onResume(){
-        EventBus.getDefault().register(subscriber);
+        if(!EventBus.getDefault().isRegistered(subscriber)){
+            EventBus.getDefault().register(subscriber);
+        }
     }
 
     @OnLifecycleEvent(Lifecycle.Event.ON_PAUSE)
     public void onPause(){
-        EventBus.getDefault().unregister(subscriber);
+        if(EventBus.getDefault().isRegistered(subscriber)) {
+            EventBus.getDefault().unregister(subscriber);
+        }
     }
 
 }

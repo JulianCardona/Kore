@@ -1,12 +1,10 @@
 package com.pixelleafs.kore;
 
-import android.arch.lifecycle.LifecycleRegistry;
-import android.arch.lifecycle.LifecycleRegistryOwner;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.BottomSheetDialogFragment;
 
-import com.pixelleafs.kore.eventbus.GhostEvent;
+import com.pixelleafs.kore.eventbus.EventGhost;
 import com.pixelleafs.kore.lifecycle.LifecycleObserverDisposables;
 import com.pixelleafs.kore.lifecycle.LifecycleObserverEventBus;
 
@@ -19,16 +17,10 @@ import io.reactivex.disposables.Disposable;
  * @author Julian Cardona on 9/5/17.
  */
 
-public abstract class KoreBottomSheetFragment extends BottomSheetDialogFragment implements LifecycleRegistryOwner {
+public abstract class KoreBottomSheetFragment extends BottomSheetDialogFragment{
 
-    private final LifecycleRegistry lifecycleRegistry = new LifecycleRegistry(this);
     private final LifecycleObserverDisposables lifecycleObserverDisposables = new LifecycleObserverDisposables();
     private final LifecycleObserverEventBus lifecycleObserverEventBus = new LifecycleObserverEventBus(this);
-
-    @Override
-    public LifecycleRegistry getLifecycle() {
-        return this.lifecycleRegistry;
-    }
 
     public void addDisposable(Disposable disposable){
         lifecycleObserverDisposables.addDisposable(disposable);
@@ -61,5 +53,5 @@ public abstract class KoreBottomSheetFragment extends BottomSheetDialogFragment 
     }
 
     @Subscribe
-    public void onEventGhost(GhostEvent event) {}
+    public void onEventGhost(EventGhost event) {}
 }

@@ -1,8 +1,6 @@
 package com.pixelleafs.kore;
 
 import android.app.ProgressDialog;
-import android.arch.lifecycle.LifecycleRegistry;
-import android.arch.lifecycle.LifecycleRegistryOwner;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -30,9 +28,8 @@ import io.reactivex.disposables.Disposable;
  * @author Julian Cardona on 9/5/17.
  */
 
-public abstract class KoreActivity  extends AppCompatActivity implements LifecycleRegistryOwner {
+public abstract class KoreActivity  extends AppCompatActivity{
 
-    private final LifecycleRegistry lifecycleRegistry = new LifecycleRegistry(this);
     private final LifecycleObserverDisposables lifecycleObserverDisposables = new LifecycleObserverDisposables();
     private final LifecycleObserverEventBus lifecycleObserverEventBus = new LifecycleObserverEventBus(this);
 
@@ -72,11 +69,6 @@ public abstract class KoreActivity  extends AppCompatActivity implements Lifecyc
     }
 
     abstract protected void initViews();
-
-    @Override
-    public LifecycleRegistry getLifecycle() {
-        return lifecycleRegistry;
-    }
 
     private void initLifeCycleObservers(){
         getLifecycle().addObserver(lifecycleObserverDisposables);

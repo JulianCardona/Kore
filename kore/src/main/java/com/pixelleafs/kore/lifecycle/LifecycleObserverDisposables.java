@@ -38,13 +38,6 @@ public class LifecycleObserverDisposables implements LifecycleObserver{
         this.disposables.add(disposable);
     }
 
-    public void addDisposableForever(@NonNull Disposable disposable) {
-        if(isCompositeDisposableForeverEmpty()){
-            disposablesForever = new CompositeDisposable();
-        }
-        this.disposablesForever.add(disposable);
-    }
-
     public void clearDisposables(){
         if(!isCompositeDisposableEmpty()) {
             this.disposables.clear();
@@ -55,6 +48,13 @@ public class LifecycleObserverDisposables implements LifecycleObserver{
         if(!isCompositeDisposableForeverEmpty()) {
             this.disposablesForever.clear();
         }
+    }
+
+    public void addDisposableForever(@NonNull Disposable disposable) {
+        if(isCompositeDisposableForeverEmpty()){
+            disposablesForever = new CompositeDisposable();
+        }
+        this.disposablesForever.add(disposable);
     }
 
     private boolean isCompositeDisposableEmpty() {
